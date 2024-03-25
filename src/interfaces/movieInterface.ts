@@ -1,5 +1,5 @@
 export interface IData{
-    page: number,
+    page: string,
     results: IMovie[],
     total_pages: number,
     total_results: number

@@ -1,3 +1,20 @@
 .Header{
     display: flex;
+    height: 17vh;
+    background-color: #0f1c26;
+    align-items: center;
+}
+.logo{
+    margin-left: 28px;
+    margin-right: 40px;
+    height: 33vh;
+    width: 17vw;
+}
+.homeIcon{
+    height: 9vh;
+    width: 5vw;
+    padding-top: 4px;
+}
+.themeSwitch{
+    color: #313059;
 }

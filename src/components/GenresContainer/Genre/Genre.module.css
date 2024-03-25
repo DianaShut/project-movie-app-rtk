@@ -1,0 +1,12 @@
+.genre{
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+.genre a{
+    text-decoration: none;
+    color: black;
+}
+.genre a [class='active']{
+    color: grey;
+    text-decoration: underline;
+}

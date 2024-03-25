@@ -1,0 +1,24 @@
+.Movie{
+    width: 18vw;
+    height: 43vh;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+.title{
+    width: 15vw;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.Movie img{
+    width: 15vw;
+    height: 34vh;
+    border-radius: 9px;
+}
+.Movie img:hover{
+    width: 16vw;
+    height: 35vh;
+    border: 2px solid #2b2b8f;
+}

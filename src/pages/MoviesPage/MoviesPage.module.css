@@ -1,0 +1,9 @@
+.MoviesPage{
+    display: flex;
+}
+.genresList{
+    width: 20vw;
+}
+/*.light{*/
+/*    background-color: bisque;*/
+/*}*/
