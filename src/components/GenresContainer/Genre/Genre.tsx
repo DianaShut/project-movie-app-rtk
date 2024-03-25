@@ -13,11 +13,9 @@ const Genre:FC<IProps> = ({genre}) => {
 
 
     return (
-        <div>
             <div className={css.genre}>
                 <NavLink to={`/genres/${id}`}>{name}</NavLink>
             </div>
-        </div>
     );
 };
 

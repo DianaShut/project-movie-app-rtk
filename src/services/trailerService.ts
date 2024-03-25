@@ -1,0 +1,5 @@
+const trailerService ={
+
+}
+
+export {trailerService}

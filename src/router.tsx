@@ -4,7 +4,7 @@ import {MainLayout} from "./layouts";
 import {GenresMoviesPage, MovieDetailsPage, MoviesPage} from "./pages";
 
 
-const router = createBrowserRouter([
+const router= createBrowserRouter([
     {path: '', element: <MainLayout/>, children:[
             {index: true, element: <Navigate to={'movies'}/>},
             {path: 'movies', element: <MoviesPage/>},

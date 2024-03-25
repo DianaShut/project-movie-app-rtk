@@ -1,7 +1,7 @@
 .Movie{
     width: 18vw;
     height: 43vh;
-    color: white;
+    /*color: white;*/
     font-size: 20px;
     cursor: pointer;
 }

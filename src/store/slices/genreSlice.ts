@@ -1,24 +1,24 @@
 import {createAsyncThunk, createSlice} from "@reduxjs/toolkit";
 
-import {IData, IGenre, IMovie} from "../../interfaces";
+import {IData, IGenres, IMovie} from "../../interfaces";
 import {AxiosError} from "axios";
 import {genreService} from "../../services";
 
 interface IState {
-    genres: IGenre[],
+    genres: IGenres,
     moviesByGenres: IMovie[],
     currentPage: number,
     totalPages: number
 }
 
 const initialState:IState = {
-    genres: [],
+    genres: {},
     moviesByGenres: [],
     currentPage: 1,
     totalPages: 1
 }
 
-const getAll = createAsyncThunk<IGenre[], void>(
+const getAll = createAsyncThunk<IGenres, void>(
     'genreSlice/getAllGenres',
     async (_, {rejectWithValue}) => {
         try{
@@ -55,7 +55,7 @@ const genreSlice = createSlice({
     extraReducers: builder =>
         builder
             .addCase(getAll.fulfilled, (state, action) =>{
-                state.genres = action.payload
+                state.genres = action.payload.genres
             })
             .addCase(getMoviesByGenres.fulfilled, (state, action) =>{
                 state.moviesByGenres = action.payload.results;

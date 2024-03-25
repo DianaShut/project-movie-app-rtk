@@ -27,6 +27,7 @@ const Movies = () => {
 
     return (
         <div>
+            <h2>All Films</h2>
             <div className={css.movies}>
                 {movies.map(movie => <Movie key={movie.id} movie={movie}/>)}
             </div>

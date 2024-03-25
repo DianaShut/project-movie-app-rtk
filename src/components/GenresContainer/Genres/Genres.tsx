@@ -3,6 +3,9 @@ import {useEffect} from "react";
 
 import {genresActions} from "../../../store";
 import {Genre} from "../Genre";
+import css from './Genres.module.css'
+
+
 
 const Genres = () => {
     const {genres} = useAppSelector(state => state.genres);
@@ -13,8 +16,9 @@ const Genres = () => {
     }, []);
 
     return (
-        <div>
-            {genres.map(genre => <Genre key={genre.id} genre={genre}/>)}
+        <div className={css.genres}>
+            <h2>Genres</h2>
+            {Array.isArray(genres) && genres.map(genre => <Genre key={genre.id} genre={genre}/>)}
         </div>
     );
 };
