@@ -2,3 +2,12 @@
     height: 40px;
     width: 400px;
 }
+.iconButton{
+    width: 5vw;
+    height: 6vh;
+    border: none;
+    margin-right: 100px;
+}
+.textField:not(:placeholder-shown){
+    background-color: transparent;
+}

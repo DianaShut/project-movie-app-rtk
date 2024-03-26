@@ -5,6 +5,7 @@ import {IMovie} from "../../../interfaces";
 import css from './Movie.module.css'
 interface IProps {
     movie: IMovie
+
 }
 const Movie:FC<IProps> = ({movie}) => {
     const {id, title, poster_path} = movie;

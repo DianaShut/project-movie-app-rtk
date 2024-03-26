@@ -9,14 +9,16 @@ interface IState {
     movies: IMovie[],
     currentPage: number,
     totalPages: number,
-    movieDetails: IInfo
+    movieDetails: IInfo,
+    favorites: IMovie[]
 }
 
 const initialState: IState = {
     movies: [],
     currentPage: 1,
     totalPages: 1,
-    movieDetails: {}
+    movieDetails: {},
+    favorites: []
 }
 
 const getAll = createAsyncThunk<IData, string>(
@@ -51,6 +53,12 @@ const movieSlice = createSlice({
     reducers:{
         setPage: (state, action) => {
             state.currentPage = action.payload;
+        },
+        addToFavorites: (state, action) => {
+            state.favorites.push(action.payload);
+        },
+        removeFromFavorites: (state, action) => {
+            state.favorites = state.favorites.filter(movie => movie.id !== action.payload.id);
         }
     },
     extraReducers: builder =>
@@ -59,8 +67,7 @@ const movieSlice = createSlice({
                 state.movies = action.payload.results;
                 state.totalPages = action.payload.total_pages;
             })
-            .
-            addCase(getById.fulfilled, (state, action) =>{
+            .addCase(getById.fulfilled, (state, action) =>{
                 state.movieDetails =action.payload;
             })
 })

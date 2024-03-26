@@ -1,5 +1,0 @@
-const trailerService ={
-
-}
-
-export {trailerService}

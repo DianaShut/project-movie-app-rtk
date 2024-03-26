@@ -1,0 +1,16 @@
+.dark button{
+    background-color: #0f1c26;
+    width: 10vw;
+    height: 7vh;
+    border-radius: 10px;
+    border: #313059 solid 2px;
+    color: #313059;
+}
+.light button{
+    background-color: cadetblue;
+    width: 10vw;
+    height: 7vh;
+    border-radius: 10px;
+    border: #313059 solid 2px;
+    color: #313059;
+}

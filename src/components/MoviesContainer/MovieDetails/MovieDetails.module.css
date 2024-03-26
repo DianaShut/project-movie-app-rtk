@@ -12,7 +12,6 @@
     width: 27vw;
     margin-top: 25px;
     border-radius: 5px;
-
 }
 .infoBlock{
     margin-left: 25px;
@@ -25,7 +24,12 @@
 }
 .info h1{
     color: #070728;
+    padding-top: 10px;
 }
 .overview{
     padding-top: 10px;
+}
+.trailer{
+    color: #070728;
+    padding-left: 50px;
 }

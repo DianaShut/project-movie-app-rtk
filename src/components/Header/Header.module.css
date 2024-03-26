@@ -1,7 +1,13 @@
-.Header{
+body .dark{
     display: flex;
     height: 17vh;
     background-color: #0f1c26;
+    align-items: center;
+}
+.light{
+    background-color: cadetblue;
+    display: flex;
+    height: 17vh;
     align-items: center;
 }
 .logo{
@@ -14,7 +20,22 @@
     height: 9vh;
     width: 5vw;
     padding-top: 4px;
-}
-.themeSwitch{
     color: #313059;
+}
+.heart{
+    margin-left: 20px;
+    height: 9vh;
+    width: 5vw;
+}
+.icons{
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 700px;
+}
+
+.hr{
+    margin: 0;
+    background-color: #313059;
+    height: 2px;
 }

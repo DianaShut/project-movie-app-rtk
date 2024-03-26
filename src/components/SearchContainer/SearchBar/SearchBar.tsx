@@ -22,16 +22,16 @@ const SearchBar: FC<SearchBarProps> = ({ onSearch }) => {
 
     return (
         <form onSubmit={handleSubmit} className={css.SearchBar}>
-            <TextField
+            <TextField className={css.textField}
                 label="Search"
                 variant="outlined"
                 value={searchTerm}
                 onChange={handleChange}
                 InputProps={{
                     endAdornment: (
-                        <InputAdornment position="end">
-                            <IconButton type="submit">
-                                <SearchIcon />
+                        <InputAdornment className={css.button} position="end">
+                            <IconButton className={css.iconButton} type="submit">
+                                <SearchIcon/>
                             </IconButton>
                         </InputAdornment>
                     ),

@@ -1,18 +1,18 @@
 import {createAsyncThunk, createSlice} from "@reduxjs/toolkit";
 
-import {IData, IGenres, IMovie} from "../../interfaces";
+import {IData, IGenre, IGenres, IMovie} from "../../interfaces";
 import {AxiosError} from "axios";
 import {genreService} from "../../services";
 
 interface IState {
-    genres: IGenres,
+    genres: IGenre[],
     moviesByGenres: IMovie[],
     currentPage: number,
     totalPages: number
 }
 
 const initialState:IState = {
-    genres: {},
+    genres: [],
     moviesByGenres: [],
     currentPage: 1,
     totalPages: 1
