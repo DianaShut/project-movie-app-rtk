@@ -11,6 +11,7 @@ interface IState {
     totalPages: number
 }
 
+
 const initialState:IState = {
     genres: [],
     moviesByGenres: [],
